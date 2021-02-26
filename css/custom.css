@@ -1,0 +1,344 @@
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+
+#topbar {
+  background: #e3722e;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  color: #fff;
+}
+
+#topbar .contact-info a:hover {
+  color: #50d8af;
+}
+
+#topbar .contact-info i {
+  color: #fff;
+  padding: 4px;
+}
+
+#topbar .contact-info .fa-phone {
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 1px solid #e9e9e9;
+}
+
+#topbar .social-links a {
+  color: #fff;
+  padding: 4px 6px;
+  display: inline-block;
+  line-height: 1px;
+  
+}
+
+#topbar .social-links a:hover {
+  color: #50d8af;
+}
+
+#topbar .social-links a:first-child {
+  border-left: 0;
+}
+
+
+/*-----------------------------------------------------------------------------------------------
+	Side bar Form
+-------------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------
+	1. Buttons 
+--------------------------------------- */
+
+.btn {
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.site-button:active,
+.site-button:focus,
+.site-button:visited,
+.active>.site-button {
+	background-color: #ff5e15;
+	color: #fff;
+}
+
+.site-button:hover {
+	background-color: #00173c;
+	color: #fff;
+}
+
+.site-button-secondry {
+	color: #fff;
+	outline: none;
+	background-color:#00173c ;
+}
+
+.site-button-secondry:active,
+.site-button-secondry:hover,
+.active>.site-button-secondry {
+background-color:#ededed;
+color:#111;
+}
+
+.site-button-secondry:hover.site-btn-effect{
+    text-shadow: -400px 0 0 #111111, 0 0 0   #111111;
+}
+
+.site-button {
+	outline: none;
+	color: #fff;
+	padding: 15px 40px;
+	letter-spacing: 1px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	display: inline-block;
+	background-color:#ff5e15 ;
+	border: none;
+	font-size: 14px;
+	font-weight:500;
+}
+
+
+/*-------------------------------------
+	2. Title separators 
+-------------------------------------*/
+.wt-separator-two-part{padding-bottom:15px;}
+.wt-separator-two-part-row{display: flex; align-items: center;}
+.wt-separator-two-part-left .section-head{margin-bottom:0px;}
+
+.wt-separator-outer {
+	overflow: hidden;
+}
+
+.wt-small-separator{font-family: 'Teko', sans-serif; font-size:43px;line-height:34px; margin-bottom:15px;position:relative; display:inline-block;}
+.wt-small-separator img{width:28px;vertical-align: baseline;}
+.wt-small-separator div{display:inline-block;}
+
+@media only screen and (max-width:767px){
+.wt-separator-two-part-right.text-right{
+    text-align:left !important;
+}
+.wt-separator-two-part{padding-bottom:30px;}
+}
+@media only screen and (max-width:540px){
+.wt-small-separator {
+    font-size: 22px;
+	line-height: 20px;
+}
+}
+
+
+/*center-title*/
+.center.wt-small-separator-outer{	text-align:center;}
+.center.wt-small-separator-outer h2{max-width:650px; margin:0px auto;}
+.center .wt-small-separator div.sep-leaf-right{	position:relative;	margin-left: 50px;}
+.center .wt-small-separator div.sep-leaf-left{	position:relative;	margin-right: 50px;}
+.center .wt-small-separator div.sep-leaf-right:before,
+.center .wt-small-separator div.sep-leaf-left:before{
+	position: absolute;
+	content: '';	
+	background-color:#ff5e15;
+	width: 40px;
+	height: 3px;
+	bottom: 0px;	
+}
+.center .wt-small-separator div.sep-leaf-right:before{right: 0px;}
+.center .wt-small-separator div.sep-leaf-left:before{	left: 0px;}
+/*left-title*/
+
+.left.wt-small-separator-outer{	text-align:left;}
+.left .wt-small-separator div.sep-leaf-right{	position:relative;	margin-left: 50px;}
+.left .wt-small-separator div.sep-leaf-left{	position:relative;	margin-right: 50px; display:none;}
+.left .wt-small-separator div.sep-leaf-right:before,
+.left .wt-small-separator div.sep-leaf-left:before{
+	position: absolute;
+	content: '';	
+	background-color:#ff5e15;
+	width: 60px;
+	height: 3px;
+	bottom: -10px;		
+}
+.left .wt-small-separator div.sep-leaf-right:before{right: 118px;}
+.left .wt-small-separator div.sep-leaf-left:before{	left: 0px;}
+
+
+/*-------------------------------------
+	17. Form elements 
+-------------------------------------*/
+
+label {
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.panel-default,
+.panel-default>.panel-heading {
+	border-color: #e3722e;
+	color: inherit;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+	border-top-color: #e3722e;
+}
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+.form-control {
+	border-color: #e1e6eb;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	height: 40px;
+	font-size: 13px;
+	line-height: 20px;
+	padding: 9px 12px 9px 10px;
+}
+
+.form-control:focus {
+	border-color: #e1e1e1;
+	outline: 0;
+}
+
+.form-control:focus,
+.has-error .form-control:focus {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.form-control.kv-fileinput-caption {
+	height: 39px;
+}
+
+.form-group.form-inline .radio,
+.form-group.form-inline .checkbox {
+	margin-right: 15px;
+}
+
+
+/*====video section====*/
+.video-counter-section{position:relative; margin-bottom: 40px;}
+.video-counter2-section{padding-top: 40px;}
+
+
+/*====Button Effect====*/
+
+.site-btn-effect {
+	color: rgba(0, 0, 0, 0) !important;
+	transition: all .3s ease !important;
+}
+
+.site-btn-effect {
+	text-shadow: 0 0 0 #fff, 400px 0 0 #fff;
+}
+
+.site-btn-effect:hover {
+	text-shadow: -400px 0 0 #fff, 0 0 0 #fff;
+}
+
+
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+.form-control {
+	height: 50px;
+	font-size: 13px;
+	line-height: 20px;
+	padding: 10px 12px;
+	border-radius: 0px;
+	border: none;
+}
+
+.form-control:focus {
+	border-color: #d7dce1;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .06);
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .06);
+	background-color: #F8F8F8;
+}
+
+.form-control2 {
+	border: none;
+	border-bottom: 1px solid #e8e8e8;
+	width: 100%;
+	height: 44px;
+	font-size:20px;
+	line-height: 20px;
+	padding: 10px 12px 10px 20px;
+}
+
+.form-control2:focus {
+	border-bottom-color: #f11749;
+}
+
+.wt-input-icon .input-group-addon2 {
+	position: absolute;
+	left: 0px;
+	top: 12px;
+	z-index: 4;
+	border: none;
+	padding: 0;
+	color: #222;
+	-webkit-border-radius: 0px;
+	border-radius: 6px;
+	background: none;
+}
+
+textarea.form-control2 {
+	height: auto;
+}
+
+.form-control.kv-fileinput-caption {
+	height: 39px;
+}
+
+.form-group.form-inline .radio,
+.form-group.form-inline .checkbox {
+	margin-right: 15px;
+}
+
+
+.bg-blue{
+	background-color: #e3dfdc !important ;
+	padding: 10px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+.demo
+{
+font-size: 25px;}
+
+
+
+.yellow_bold {color: #e3722e;}
+.black_bold {color: #0a0a0a;}
+
+
+.text-justify
+{
+text-align: justify;
+text-justify: inter-word;
+color: black_bold;
+}
+
+
+.gross2
+{
+	padding-top:80px;
+}
+
+/*-------------------------------------
+	Contact Phone Button
+--------------------------------------- */
+
